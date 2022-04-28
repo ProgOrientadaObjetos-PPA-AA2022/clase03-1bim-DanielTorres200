@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package manejoclases03;
-
+import java.util.Scanner;
 /**
  *
  * @author reroes
@@ -12,14 +12,17 @@ package manejoclases03;
 public class Ejecutable04 {
     
     public static void main(String[] args) {
-    
+    Scanner teclado = new Scanner(System.in);
         Hospital h1 = new Hospital();
         Hospital h2 = new Hospital();
         Hospital h3 = new Hospital();
         
-        double valor1 = 10000;
-        double valor2 = 20000;
-        double valor3 = 30000;
+        System.out.println("Ingrese el valor del presupuesto del hospital");
+        double valor1 = teclado.nextDouble();
+        System.out.println("Ingrese el valor del presupuesto del hospital");
+        double valor2 = teclado.nextDouble();
+        System.out.println("Ingrese el valor del presupuesto del hospital");
+        double valor3 = teclado.nextDouble();
         
         h1.establecerPresupuesto(valor1);
         h2.establecerPresupuesto(valor2);
